@@ -1,0 +1,28 @@
+<table class="table table-striped">
+    <thead class="thead-dark">
+      <th scope="col">Id</th>
+      <th scope="col">Number</th>
+      <th scope="col">Payment</th>
+      <th scope="col">Amount</th>
+      <th scope="col">Info</th>
+      <th scope="col">Delete</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let policy of policies">
+        <td>{{policy.id}}</td>
+        <td>{{policy.policyNumber}}</td>
+        <td>{{policy.paymentOption}}</td>
+        <td>{{policy.policyAmount}}</td>
+        <td>{{policy.extraInfo}}</td>
+        <td>
+            <button (click)="delete(policy.id)" class="btn btn-warning">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+<div class="btn-group"> 
+  <app-create></app-create>
+  <app-delete></app-delete>
+  <app-update></app-update>
+</div>

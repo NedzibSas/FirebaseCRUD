@@ -1,0 +1,31 @@
+<form class="ml-5">
+    <div class="form-group">
+<label>
+    Id:
+    <input type="text" class="form-control" [formControl]="id">
+</label>
+<label>
+    Number:
+    <input type="text" class="form-control" [formControl]="number">
+</label>
+<br>
+<label>
+    Payment:
+    <input type="text" class="form-control" [formControl]="payment">
+</label>
+<br>
+<label>
+    Amount:
+    <input type="text" class="form-control" [formControl]="amount">
+</label>
+<br>
+<label>
+    Info:
+    <input type="text" class="form-control" [formControl]="info">
+</label>
+<br>
+</div>
+</form>
+<p>
+    <button class="btn btn-info ml-5" (click)="update()">Update</button>
+</p>
